@@ -9,6 +9,7 @@
     "lint": "next lint",
     "cypress": "cypress open",
     "test": "cypress run"
+
   },
   "dependencies": {
     "next": "12.1.0",
