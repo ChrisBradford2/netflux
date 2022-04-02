@@ -7,11 +7,8 @@ function Header() {
             <Image
                 className="object-contain"
                 src="/Netflux.svg"
-                width={200}
-                height={100}
-                alt="Logo"
-            />
-        </header>
+    width = {200} height = {100} alt =
+        "Logo" / > < /header>
     )
 }
 
