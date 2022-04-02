@@ -40,3 +40,4 @@ gh-pages.pub
 
 # cypress
 /cypress/videos/
+/cypress/screenshots/
