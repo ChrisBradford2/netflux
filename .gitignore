@@ -41,3 +41,4 @@ gh-pages.pub
 # cypress
 /cypress/videos/
 /cypress/screenshots/
+/cypress/fixtures/
