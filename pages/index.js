@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import Header from "../components/Header";
 import Nav from "../components/Nav";
-import Movie from "../components/Results";
+import Results from "../components/Results";
 import requests from "../service/requests";
 
 export default function Home({ results }) {
@@ -16,7 +16,7 @@ export default function Home({ results }) {
 
       <Header />
       <Nav />
-      <Movie results={results} />
+      <Results results={results} />
 
     </div>
   )
@@ -33,7 +33,7 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      results: request.results || null,
+      results: request.results,
     }
   };
 }
