@@ -2,8 +2,10 @@ import Head from "next/head";
 
 import Header from "../components/Header";
 import Nav from "../components/Nav";
+import Movie from "../components/Results";
+import requests from "../service/requests";
 
-export default function Home() {
+export default function Home({ results }) {
   return (
     <div>
       <Head>
@@ -14,8 +16,24 @@ export default function Home() {
 
       <Header />
       <Nav />
+      <Movie results={results} />
 
-      <h1>Let&apos;s build Netlux !</h1>
     </div>
   )
+}
+
+export async function getServerSideProps(context) {
+  const genre = context.query.genre;
+
+  const request = await fetch(
+    `https://api.themoviedb.org/3${
+      requests[genre]?.url || requests.fetchTrending.url
+    }`
+  ).then((res) => res.json());
+
+  return {
+    props: {
+      results: request.results || null,
+    }
+  };
 }
