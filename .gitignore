@@ -37,3 +37,7 @@ yarn-error.log*
 # ssh
 gh-pages
 gh-pages.pub
+
+# cypress
+/cypress/videos/
+/cypress/screenshots/
