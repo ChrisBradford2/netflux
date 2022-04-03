@@ -11,10 +11,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/ * Header * /}
+      {/* Header */}
       <Header />
 
-      <h1>Let & apos; s build Netlux!</h1>
+      <h1>Let&apos;s build Netlux!</h1>
     </div>
-  );
+  )
 }

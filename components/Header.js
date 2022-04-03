@@ -10,9 +10,9 @@ function Header() {
         width={200}
         height={100}
         alt="Logo"
-      />{" "}
+      />
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header
