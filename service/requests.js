@@ -1,32 +1,33 @@
 const API_KEY = process.env.API_KEY;
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     fetchTrending: {
         title: 'Trending',
-        url: `/trending/all/week?api_key=${API_KEY}`,
+        url: `/trending/movie/week?api_key=${API_KEY}`,
     },
     fetchTopRated: {
         title: 'Top Rated',
-        url: `/movie/top_rated?api_key=${API_KEY}S`,
+        url: `/movie/top_rated?api_key=${API_KEY}`,
     },
-    fetchAction: {
+    fetchActionMovies: {
         title: 'Action',
-        url: `/discover/movie?api_key=${API_KEY}&with_genre=28`,
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
     },
-    fetchComedy: {
+    fetchAnimation: {
+        title: 'Animation',
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=16`,
+    },
+    fetchComedyMovies: {
         title: 'Comedy',
-        url: `/discover/movie?api_key=${API_KEY}&with_genre=35`,
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
     },
-    fetchHorror: {
+    fetchHorrorMovies: {
         title: 'Horror',
-        url: `/discover/movie?api_key=${API_KEY}&with_genre=27`,
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
     },
-    fetchRomance: {
+    fetchRomanceMovies: {
         title: 'Romance',
-        url: `/discover/movie?api_key=${API_KEY}&with_genre=10749`,
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
     },
-    fetchMystery: {
-        title: 'Mystery',
-        url: `/discover/movie?api_key=${API_KEY}&with_genre=9648`,
-    }
 }
