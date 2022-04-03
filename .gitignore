@@ -33,3 +33,11 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# ssh
+gh-pages
+gh-pages.pub
+
+# cypress
+/cypress/videos/
+/cypress/screenshots/
