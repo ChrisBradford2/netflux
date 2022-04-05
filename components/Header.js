@@ -18,7 +18,7 @@ function Header() {
       </div>
       <Image
         className="object-contain"
-        src="/Netflux.svg"
+        src="/new-netflux.png"
         width={200}
         height={100}
         alt="Logo"
