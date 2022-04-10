@@ -18,7 +18,7 @@ function Header() {
         <Link href="/">
           <a><HeaderItem title='WISHLIST' Icon={HeartIcon} /></a>
         </Link>
-        <Link href="/">
+        <Link href="/search">
           <a><HeaderItem title='SEARCH' Icon={SearchIcon} /></a>
         </Link>
         <Link href="/login">
